@@ -1,0 +1,71 @@
+body{
+    width: 93%;
+    margin: auto;
+    font-family: Raleway, serif;
+}
+@font-face {
+    font-family: Raleway;
+    src: url(police/Raleway-VariableFont_wght.ttf);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
+
+#logo{
+    padding-top: 55px;
+}
+nav{
+    width: 30%;
+}
+
+#pageActive{
+    color: #0065fc;
+}
+.test{
+    align-items: center;
+    padding-top: 55px;
+    width: 100%;
+    text-align: center;
+}
+#hebergement{
+    border-top: #0065fc solid 2px;
+}
+#inscrire{
+    color: #0065fc;
+    font-weight: bold;
+}
+#champRecherche{
+    height: 50px;
+}
+#geoloc{
+    width: 3%;
+    height: 100% ;
+    font-size: 1.5em;
+    background-color: lightgray;
+    border-radius: 20% 0% 0% 20%;
+    border: lightgray solid 1px;
+}
+#textRecherche{
+    width: 16%;
+    height:90%;
+    font-size: 2em;
+    border: lightgray solid 1px;
+}
+#buttonRecherche{
+    height: 100%;
+    width: 9%;
+    font-size: 1.5em;
+    background-color: #0065fc;
+    color: white;
+    border-radius: 0% 20% 20% 0%;
+    border: #0065fc solid 1px;
+}
