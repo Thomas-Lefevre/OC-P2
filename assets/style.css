@@ -36,7 +36,7 @@ nav{
     width: 100%;
     text-align: center;
 }
-#hebergement{
+#hebergementNav{
     border-top: #0065fc solid 2px;
 }
 #inscrire{
@@ -45,27 +45,108 @@ nav{
 }
 #champRecherche{
     height: 50px;
+    width: 30%;
+    display: inline-flex;
 }
 #geoloc{
-    width: 3%;
-    height: 100% ;
+    width: 13%;
     font-size: 1.5em;
-    background-color: lightgray;
+    background-color: #f2f2f2;
     border-radius: 20% 0% 0% 20%;
-    border: lightgray solid 1px;
+    border: #f2f2f2 solid 1px;
 }
 #textRecherche{
-    width: 16%;
-    height:90%;
-    font-size: 2em;
-    border: lightgray solid 1px;
+    width: 57%;
+    font-size: 1.5em;
+    border: #f2f2f2 solid 1px;
 }
 #buttonRecherche{
-    height: 100%;
-    width: 9%;
+    width: 30%;
     font-size: 1.5em;
     background-color: #0065fc;
     color: white;
     border-radius: 0% 20% 20% 0%;
     border: #0065fc solid 1px;
+}
+#filtre{
+    font-weight: bold;
+    font-size: 1.em;
+    margin-top: 50px;
+    display: flex;
+    width: 63%;
+    justify-content: space-between;
+}
+.titreCategorie{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.filtreButton{
+    display: flex;
+    border: lightgray solid 1px;
+    border-radius: 50px;
+}
+.filtreButton:hover{
+    background-color: #DEEBFF;
+}
+.filtreIcone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065fc;
+    background-color: #DEEBFF;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+.filtreNom{
+    padding-right: 20px;
+}
+#info{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    align-items: center;
+}
+#infoBulle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border: lightgray solid 1px;
+    border-radius: 50%;
+    color: #0065fc;
+}
+#hebergement{
+    display: flex;
+    justify-content: space-between;
+    height: 650px;
+}
+#hebergementMarseille{
+    width: 60%;
+    background-color: lightgray;
+    padding: 40px;
+    border-radius: 20px;
+}
+#populaire{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    background-color: lightgray;
+    padding: 40px;
+    border-radius: 20px;
+}
+.cardHebergement{
+    background-color: white;
+    padding: 5px;
+    width: 28%;
+    height: 32%;
+}
+.imgHebergement{
+    width: 100%;
+    height: 150px;
 }
