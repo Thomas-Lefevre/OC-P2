@@ -1,6 +1,5 @@
 body{
-    width: 93%;
-    margin: auto;
+    margin: 0;
     font-family: Raleway, serif;
 }
 @font-face {
@@ -10,6 +9,8 @@ body{
 header{
     display: flex;
     justify-content: space-between;
+    width: 93%;
+    margin: auto;
 }
 a{
     text-decoration: none;
@@ -30,7 +31,7 @@ nav{
 #pageActive{
     color: #0065fc;
 }
-.test{
+.buttonNav{
     align-items: center;
     padding-top: 55px;
     width: 100%;
@@ -42,6 +43,10 @@ nav{
 #inscrire{
     color: #0065fc;
     font-weight: bold;
+}
+main{
+    width: 93%;
+    margin: auto;
 }
 #champRecherche{
     height: 50px;
@@ -123,6 +128,7 @@ nav{
 #hebergement{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 70px;
 }
 #hebergementMarseille{
     display: flex;
@@ -144,12 +150,12 @@ nav{
     padding: 5px;
     margin-bottom: 20px;
     width: 30%;
-    border-radius: 20px;
 }
 .imgHebergement{
     width: 100%;
     height: 150px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 #titreHebergementMarseille{
     width: 100%;
@@ -178,13 +184,74 @@ nav{
     display: flex;
     background-color: white;
     padding: 5px;
-    border-radius: 20px;
 }
 .imgPopulaire{
     height: 150px;
     width: 150px;
     border-radius: 20px 0 0 20px;
+    object-fit: cover;
 }
 .infoPopulaire{
     padding-left: 5%;
+}
+#listeActivites{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.duoActivites{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22%;
+}
+.cardActivitesGrand{
+    height: 550px;
+    width: 22%;
+}
+.imgActivitesGrand{
+    height: 500px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+.imgActivitesMoyen{
+    width: 100%;
+    height: 230px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+.imgActivitesPetit{
+    width: 100%;
+    height: 135px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+.activitesNom{
+    padding-left: 5%;
+}
+.card{
+    border-radius: 20px;
+    box-shadow: gray 0px 7px 40px 0px;
+}
+footer{
+    width: 100%;
+    background-color: #f2f2f2;
+    margin-top: 70px;
+}
+#contenuFooter{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 4%;
+}
+.titreFooter{
+    display: flex;
+    flex-direction: column;
+}
+.lienFooter{
+    margin: 10px;
+}
+.lienFooter:hover{
+    text-decoration: underline;
 }
