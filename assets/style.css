@@ -82,7 +82,7 @@ nav{
 }
 .filtreButton{
     display: flex;
-    border: lightgray solid 1px;
+    border: #f2f2f2 solid 1px;
     border-radius: 50px;
 }
 .filtreButton:hover{
@@ -116,37 +116,75 @@ nav{
     align-items: center;
     height: 20px;
     width: 20px;
-    border: lightgray solid 1px;
+    border: #f2f2f2 solid 1px;
     border-radius: 50%;
     color: #0065fc;
 }
 #hebergement{
     display: flex;
     justify-content: space-between;
-    height: 650px;
 }
 #hebergementMarseille{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 60%;
-    background-color: lightgray;
+    background-color: #f2f2f2;
     padding: 40px;
     border-radius: 20px;
 }
 #populaire{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 25%;
-    background-color: lightgray;
+    background-color: #f2f2f2;
     padding: 40px;
     border-radius: 20px;
 }
 .cardHebergement{
     background-color: white;
     padding: 5px;
-    width: 28%;
-    height: 32%;
+    margin-bottom: 20px;
+    width: 30%;
+    border-radius: 20px;
 }
 .imgHebergement{
     width: 100%;
     height: 150px;
+    border-radius: 20px 20px 0 0;
+}
+#titreHebergementMarseille{
+    width: 100%;
+}
+.blueStar{
+    color: #0065fc;
+}
+.grayStar{
+    color: #f2f2f2;
+}
+.infoHebergement{
+    padding-left: 5%;
+}
+#titrePlusPopulaire{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#listeCardPopulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+}
+.cardPopulaire{
+    display: flex;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+}
+.imgPopulaire{
+    height: 150px;
+    width: 150px;
+    border-radius: 20px 0 0 20px;
+}
+.infoPopulaire{
+    padding-left: 5%;
 }
