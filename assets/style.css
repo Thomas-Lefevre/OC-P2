@@ -8,6 +8,7 @@ body{
 }
 .gras{
     font-weight: 700;
+    margin: 8px 0;
 }
 header{
     width: 93%;
@@ -16,6 +17,9 @@ header{
 a{
     text-decoration: none;
     color: black;
+}
+.prixHebergement{
+    margin: 8px 0;
 }
 #pageActive{
     color: #0065fc;
@@ -28,12 +32,13 @@ a{
     width: 13%;
     font-size: 1.2em;
     background-color: #f2f2f2;
-    border-radius: 20% 0% 0% 20%;
+    border-radius: 10px 0 0 10px;
     border: #f2f2f2 solid 1px;
 }
 #textRecherche{
     width: 70%;
     font-size: 1.3em;
+    font-weight: 700;
     border: #f2f2f2 solid 1px;
 }
 .filtreNom{
@@ -60,11 +65,12 @@ a{
 .dimensionImgHebergement{
     width: 100%;
     height: 150px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
 }
 .imgHebergement{
     width: 100%;
     height: 100%;
-    border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
 #titreHebergementMarseille{
@@ -89,7 +95,6 @@ a{
     border-radius: 20px;
     box-shadow: lightgray 0px 7px 40px 0px;
 }
-
 /* PC */
 @media only screen and (min-width : 1230px) {
     main{
@@ -124,9 +129,10 @@ a{
     #buttonRecherche{
         width: 30%;
         font-size: 1em;
+        font-weight: 700;
         background-color: #0065fc;
         color: white;
-        border-radius: 0% 20% 20% 0%;
+        border-radius: 0 10px 10px 0;
         border: #0065fc solid 1px;
     }    
     #iconeButtonRecherche{
@@ -211,11 +217,12 @@ a{
     .dimensionImgPopulaire{
         height: 150px;
         width: 150px;
+        border-radius: 20px 0 0 20px;
+        overflow: hidden;
     }
     .imgPopulaire{
         height: 100%;
         width: 100%;
-        border-radius: 20px 0 0 20px;
         object-fit: cover;
     }
     .infoPopulaire{
@@ -228,6 +235,7 @@ a{
         display: flex;
         justify-content: space-between;
         width: 100%;
+        height: 570px;
     }
     .duoActivites{
         display: flex;
@@ -236,55 +244,62 @@ a{
         width: 24%;
     }
     .articleActivites{
-        width: 24%;
+        width: 23.5%;
     }
     .cardActivitesGrand{
-        height: 560px;
+        height: 100%;
         width: 100%;
         display: block;
     }
     .cardActivitesMoyen{
         display: block;
         width: 100%;
-        height: 300px;
+        height: 310px;
     }
     .cardActivitesPetit{
         display: block;
         width: 100%;
-        height: 200px;
+        height: 220px;
     }
     .dimensionImgActivitesGrand{
         height: 500px;
         width: 100%;
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
     }
     .imgActivitesGrand{
         height: 100%;
         width: 100%;
-        border-radius: 20px 20px 0 0;
         object-fit: cover;
     }
     .dimensionImgActivitesMoyen{
         width: 100%;
         height: 240px;
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
     }
     .imgActivitesMoyen{
         width: 100%;
         height: 100%;
-        border-radius: 20px 20px 0 0;
         object-fit: cover;
     }
     .dimensionImgActivitesPetit{
         width: 100%;
         height: 150px;
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
     }
     .imgActivitesPetit{
         width: 100%;
         height: 100%;
-        border-radius: 20px 20px 0 0;
         object-fit: cover;
     }
     .activitesNom{
         padding-left: 5%;
+        margin: 0;
+        height: 70px;
+        display: flex;
+        align-items: center;
     }    
     footer{
         width: 100%;
@@ -342,9 +357,10 @@ a{
     #buttonRecherche{
         width: 30%;
         font-size: 1em;
+        font-weight: 700;
         background-color: #0065fc;
         color: white;
-        border-radius: 0% 20% 20% 0%;
+        border-radius: 0 10px 10px 0;
         border: #0065fc solid 1px;
     }
     #iconeButtonRecherche{
@@ -432,11 +448,12 @@ a{
     .dimensionImgPopulaire{
         width: 100%;
         height: 150px;
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
     }
     .imgPopulaire{
         width: 100%;
         height: 100%;
-        border-radius: 20px 20px 0 0;
         object-fit: cover;
     }
     .infoPopulaire{
@@ -450,63 +467,70 @@ a{
         display: flex;
         justify-content: space-between;
         width: 100%;
+        height: 570px;
     }
     .duoActivites{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 24%;
     }
     .articleActivites{
-        width: 24%;
+        width: 23.5%;
     }
     .cardActivitesGrand{
-        height: 560px;
+        height: 100%;
         width: 100%;
         display: block;
     }
     .cardActivitesMoyen{
         display: block;
         width: 100%;
-        height: 300px;
+        height: 310px;
     }
     .cardActivitesPetit{
         display: block;
         width: 100%;
-        height: 200px;
+        height: 220px;
     }
     .dimensionImgActivitesGrand{
         height: 500px;
         width: 100%;
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
     }
     .imgActivitesGrand{
         height: 100%;
         width: 100%;
-        border-radius: 20px 20px 0 0;
         object-fit: cover;
     }
     .dimensionImgActivitesMoyen{
         width: 100%;
         height: 240px;
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
     }
     .imgActivitesMoyen{
         width: 100%;
         height: 100%;
-        border-radius: 20px 20px 0 0;
         object-fit: cover;
     }
     .dimensionImgActivitesPetit{
         width: 100%;
         height: 150px;
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
     }
     .imgActivitesPetit{
         width: 100%;
         height: 100%;
-        border-radius: 20px 20px 0 0;
         object-fit: cover;
     }
     .activitesNom{
         padding-left: 5%;
+        margin: 0;
+        height: 70px;
+        display: flex;
+        align-items: center;
     }    
     footer{
         width: 100%;
@@ -516,7 +540,7 @@ a{
     #contenuFooter{
         display: flex;
         justify-content: space-between;
-        width: 70%;
+        width: 90%;
         padding: 4%;
     }
     .titreFooter{
@@ -592,7 +616,7 @@ a{
         font-size: 1em;
         background-color: #0065fc;
         color: white;
-        border-radius: 0% 20% 20% 0%;
+        border-radius: 0 10px 10px 0;
         border: #0065fc solid 1px;
     } 
     #filtre{
@@ -674,11 +698,12 @@ a{
     .dimensionImgPopulaire{
         height: 150px;
         width: 150px;
+        border-radius: 20px 0 0 20px;
+        overflow: hidden;
     }
     .imgPopulaire{
         height: 100%;
         width: 100%;
-        border-radius: 20px 0 0 20px;
         object-fit: cover;
     }
     .infoPopulaire{
@@ -712,31 +737,32 @@ a{
     .dimensionImgActivitesGrand{
         height: 200px;
         width: 100%;
+        border-radius: 20px 20px 0 0;
+        overflow: hidden;
     }
     .imgActivitesGrand{
         height: 100%;
         width: 100%;
-        border-radius: 20px 20px 0 0;
         object-fit: cover;
     }
     .dimensionImgActivitesMoyen{
         width: 100%;
         height: 200px;
+        overflow: hidden;
     }
     .imgActivitesMoyen{
         width: 100%;
         height: 100%;
-        border-radius: 20px 20px 0 0;
         object-fit: cover;
     }
     .dimensionImgActivitesPetit{
         width: 100%;
         height: 200px;
+        overflow: hidden;
     }
     .imgActivitesPetit{
         width: 100%;
         height: 100%;
-        border-radius: 20px 20px 0 0;
         object-fit: cover;
     }
     .activitesNom{
