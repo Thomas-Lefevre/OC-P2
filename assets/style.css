@@ -6,8 +6,12 @@ body{
     margin: 0;
     font-family: Raleway, serif;
 }
+.flex{
+    display: flex;
+}
 .gras{
     font-weight: 700;
+    font-size: 1em;
     margin: 8px 0;
 }
 header{
@@ -45,7 +49,6 @@ a{
     padding-right: 20px;
 }
 #infoBulle{
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 30px;
@@ -58,7 +61,9 @@ a{
 }
 .iconeCategorie{
     font-size: 1.5em;
-}    
+}   
+
+/* Hébergement */
 #afficherPlus{
     width: 100%;
 }
@@ -86,7 +91,6 @@ a{
     padding-left: 5%;
 }
 #titrePlusPopulaire{
-    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -95,6 +99,7 @@ a{
     border-radius: 20px;
     box-shadow: lightgray 0px 7px 40px 0px;
 }
+
 /* PC */
 @media only screen and (min-width : 1230px) {
     main{
@@ -103,14 +108,12 @@ a{
     }
     ul{
         list-style-type: none;
-        display: flex;
         margin: 0 0 0 auto;
     }
     #logo{
         padding-top: 55px;
     }
     nav{
-        display: flex;
         justify-content: space-between;
         width: 100%;
     }
@@ -139,7 +142,6 @@ a{
         display: none;
     }
     #listeFiltre{
-        display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
@@ -148,7 +150,6 @@ a{
         width: 63%;
     }
     .filtreButton{
-        display: flex;
         border: #f2f2f2 solid 2px;
         border-radius: 50px;
     }
@@ -156,7 +157,6 @@ a{
         background-color: #DEEBFF;
     }
     .filtreIcone{
-        display: flex;
         align-items: center;
         justify-content: center;
         color: #0065fc;
@@ -169,17 +169,16 @@ a{
     }
     #info{
         margin-top: 30px;
-        display: flex;
         justify-content: start;
         align-items: center;
     }    
+
+    /* Hébergement */
     #hebergement{
-        display: flex;
         justify-content: space-between;
         margin-bottom: 70px;
     }
     #hebergementMarseille{
-        display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         width: 60%;
@@ -197,6 +196,8 @@ a{
     .articleHebergement{
         width: 30%;
     }    
+
+    /* Hébergement Populaire */
     #populaire{
         width: 25%;
         background-color: #f2f2f2;
@@ -204,13 +205,11 @@ a{
         border-radius: 20px;
     }   
     #listeCardPopulaire{
-        display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 90%;
     }
     .cardPopulaire{
-        display: flex;
         background-color: white;
         padding: 5px;
     }
@@ -227,18 +226,17 @@ a{
     }
     .infoPopulaire{
         padding: 0px 0px 5px 5%;
-        display: flex;
         flex-direction: column;
         justify-content: space-between;
     }    
+
+    /* Activites */
     #listeActivites{
-        display: flex;
         justify-content: space-between;
         width: 100%;
         height: 570px;
     }
     .duoActivites{
-        display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 24%;
@@ -298,47 +296,44 @@ a{
         padding-left: 5%;
         margin: 0;
         height: 70px;
-        display: flex;
         align-items: center;
     }    
+
+    /* footer */
     footer{
         width: 100%;
         background-color: #f2f2f2;
         margin-top: 70px;
     }
     #contenuFooter{
-        display: flex;
         justify-content: space-between;
         width: 70%;
         padding: 4%;
     }
     .titreFooter{
-        display: flex;
         flex-direction: column;
     }
     .lienFooter{
-        margin: 10px;
+        margin: 10px 0;
     }
     .lienFooter:hover{
         text-decoration: underline;
     }    
 }
 /* Tablette */
-@media only screen and (min-device-width : 700px) and (max-device-width : 1229px) {
+@media only screen and (min-width : 700px) and (max-width : 1229px) {
     main{
         width: 93%;
         margin: auto;
     }    
     ul{
         list-style-type: none;
-        display: flex;
         margin: 0;
     }
     #logo{
         padding-top: 55px;
     }
     nav{
-        display: flex;
         justify-content: space-between;
         width: 100%;
     }
@@ -371,7 +366,6 @@ a{
         width: 100%;
     }
     #listeFiltre{
-        display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
@@ -379,13 +373,11 @@ a{
         width: 100%;
     }
     .filtreButton{
-        display: flex;
         border: #f2f2f2 solid 2px;
         border-radius: 50px;
         margin-top: 20px;
     }
     .filtreIcone{
-        display: flex;
         align-items: center;
         justify-content: center;
         color: #0065fc;
@@ -398,17 +390,16 @@ a{
     }
     #info{
         margin-top: 30px;
-        display: flex;
         justify-content: start;
         align-items: center;
-    }    
+    }  
+    
+    /* Hébergement */
     #hebergement{
         margin-bottom: 70px;
-        display: flex;
         flex-direction: column-reverse;
     }
     #hebergementMarseille{
-        display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         background-color: #f2f2f2;
@@ -426,6 +417,8 @@ a{
     .articleHebergement{
         width: 30%;
     }    
+
+    /* Hébergement Populaire */
     #populaire{
         flex-wrap: wrap;
         background-color: #f2f2f2;
@@ -434,7 +427,6 @@ a{
         margin-bottom: 20px;
     }
     #listeCardPopulaire{
-        display: flex;
         justify-content: space-between;
     }
     .articlePopulaire{
@@ -458,19 +450,18 @@ a{
     }
     .infoPopulaire{
         padding: 0px 0px 5px 5%;
-        display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 130px;
     }    
+
+    /* Activites */
     #listeActivites{
-        display: flex;
         justify-content: space-between;
         width: 100%;
         height: 570px;
     }
     .duoActivites{
-        display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
@@ -529,22 +520,21 @@ a{
         padding-left: 5%;
         margin: 0;
         height: 70px;
-        display: flex;
         align-items: center;
     }    
+
+    /* Footer */
     footer{
         width: 100%;
         background-color: #f2f2f2;
         margin-top: 70px;
     }
     #contenuFooter{
-        display: flex;
         justify-content: space-between;
         width: 90%;
         padding: 4%;
     }
     .titreFooter{
-        display: flex;
         flex-direction: column;
     }
     .lienFooter{
@@ -555,13 +545,12 @@ a{
     }    
 }
 /* Smartphone */
-@media only screen and (max-device-width : 699px){
+@media only screen and (max-width : 699px){
     header{
         width: 100%;
     }
     ul{
         list-style-type: none;
-        display: flex;
         margin: 20px 0 0 0;
         padding: 0;
         order: 2;
@@ -573,13 +562,11 @@ a{
         width: 40%;
     }
     nav{
-        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
     }
     #buttonNavInscrire{
-        display: flex;
         align-items: center;
         justify-content: space-between;
         order: 1;
@@ -624,7 +611,6 @@ a{
         width: 93%;
     }
     #listeFiltre{
-        display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
@@ -632,13 +618,11 @@ a{
         width: 100%;
     }
     .filtreButton{
-        display: flex;
         border: #f2f2f2 solid 2px;
         border-radius: 50px;
         margin-top: 20px;
     }
     .filtreIcone{
-        display: flex;
         align-items: center;
         justify-content: center;
         color: #0065fc;
@@ -652,12 +636,12 @@ a{
     #info{
         width: 93%;
         margin: 30px auto 30px auto;
-        display: flex;
         justify-content: start;
         align-items: center;
     }    
+
+    /* Hébergement */
     #hebergement{
-        display: flex;
         flex-direction: column-reverse;
     }
     #hebergementMarseille{
@@ -678,12 +662,13 @@ a{
         width: 100%;
         font-size: 1.5em;
     }
+
+    /* Hébergement Populaire */
     #populaire{
         background-color: #f2f2f2;
         padding: 20px;
     }   
     #listeCardPopulaire{
-        display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
@@ -691,7 +676,6 @@ a{
         margin: 10px 0;
     }
     .cardPopulaire{
-        display: flex;
         background-color: white;
         padding: 5px;
     }
@@ -708,11 +692,12 @@ a{
     }
     .infoPopulaire{
         padding: 0px 0px 5px 5%;
-        display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 200px;
     }
+
+    /* Activites */
     #activites{
         width: 93%;
         margin: auto;
@@ -768,6 +753,8 @@ a{
     .activitesNom{
         padding: 0 0 5% 5%;
     }
+
+    /* Footer */
     footer{
         width: 100%;
         background-color: #f2f2f2;
@@ -775,12 +762,10 @@ a{
         padding-top: 30px;
     }
     #contenuFooter{
-        display: flex;
         flex-direction: column;
         padding: 4%;
     }
     .titreFooter{
-        display: flex;
         flex-direction: column;
         margin-bottom: 30px;
     }
